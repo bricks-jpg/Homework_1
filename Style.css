@@ -1,0 +1,36 @@
+/* Type Selector */
+body {
+    background-color: purple;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Type Selector with Box Model */
+Header {
+    background-color: gray;
+    color: purple;
+    padding: 20px;         /* Box Model: Padding */
+    margin-bottom: 30px;   /* Box Model: Margin */
+    border-radius: 8px;
+}
+
+/* ID selector with Box Model */
+#feature-content {
+  background-color: purple;
+  color: pink;
+  padding: 25px;            /* Box Model: Padding */
+  margin-bottom: 25px;      /* Box Model: Margin */
+  border: 2px solid black;  /* Box Model: Border */
+  border-radius: 6px;
+}
+
+/* Class selector with Box Model */
+.card-info {
+background-color: purple;
+padding: 20px;            /* Box Model: Padding */
+margin-bottom: 20px;        /* Box Model: Margin */
+border: 2px solid black;  /* Box Model: Border */
+border-radius: 6px;
+}
