@@ -1,8 +1,8 @@
 
 /* Type Selector */
 body {
-    background-color: purple;
-    color: black;
+    background-color: darkgray;
+    color: whitesmoke;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -10,8 +10,8 @@ body {
 
 /* Type Selector with Box Model */
 Header {
-    background-color: gray;
-    color: purple;
+    background-color: LightGray;
+    color: Navy;
     padding: 20px;         /* Box Model: Padding */
     margin-bottom: 30px;   /* Box Model: Margin */
     border-radius: 8px;
@@ -19,8 +19,8 @@ Header {
 
 /* ID selector with Box Model */
 #feature-content {
-  background-color: purple;
-  color: pink;
+  background-color: gray;
+  color: black;
   padding: 25px;            /* Box Model: Padding */
   margin-bottom: 25px;      /* Box Model: Margin */
   border: 2px solid black;  /* Box Model: Border */
