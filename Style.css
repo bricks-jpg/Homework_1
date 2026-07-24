@@ -1,37 +1,41 @@
 
-/* Type Selector */
+/* Type Selector (applies to all body text and layout) */
 body {
-    background-color: darkgray;
-    color: whitesmoke;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #0f1c1c; /* Deep Teal background */
+ color: #e2e8f0;  /* Light cream text for contrast */
+
+ /* Box Model Elements */
+    margin: 40px auto; /* Outer margin to center content layout */
+    padding: 20px;     /* Inner space away from screen edges */
+    max-width: 800px;  /* Prevents line length from getting too wide */
 }
 
-/* Type Selector with Box Model */
-Header {
-    background-color: LightGray;
-    color: Navy;
-    padding: 20px;         /* Box Model: Padding */
-    margin-bottom: 30px;   /* Box Model: Margin */
-    border-radius: 8px;
+/* ID Selector (Applies to the #introduction section) */
+#introduction {
+    background-color: #162a2a; /* Slightly lighter teal tint */
+    
+    /* Box Model Elements */
+    border-left: 5px solid #ff7a59; /* Warm Coral accent line (Complementary color) */
+    padding: 15px 25px;         /* Strict spacing inside the intro box */
+    margin-bottom: 30px;   /* Push down the next section */
 }
 
-/* ID selector with Box Model */
-#feature-content {
-  background-color: gray;
-  color: black;
-  padding: 25px;            /* Box Model: Padding */
-  margin-bottom: 25px;      /* Box Model: Margin */
-  border: 2px solid black;  /* Box Model: Border */
-  border-radius: 6px;
+/* Class Selector (Applies to the .hobby-card articles) */
+.hobby-card {
+    background-color: #1d3535; /* Noticeable card background color */
+
+    /* Box Model Elements */
+    border: 1px solid #ff7a59; /* Coral border framing the content */
+    margin: 20px 0px;        /* Vertical spacing between my two hobbies */
+    padding: 20px;         /* Keeps text neatly away from borders */
+    border-radius: 6px;   /* Clean modern rounded corners */
 }
 
-/* Class selector with Box Model */
-.card-info {
-background-color: purple;
-padding: 20px;            /* Box Model: Padding */
-margin-bottom: 20px;        /* Box Model: Margin */
-border: 2px solid black;  /* Box Model: Border */
-border-radius: 6px;
+/* Extra */
+img {
+  max-width: 100%;
+  height: auto;         
+  margin-top: 15px;      
+  border-radius: 4px;
 }
