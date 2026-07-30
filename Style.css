@@ -93,3 +93,11 @@ body {
     padding: 20px;
     border-radius: 6px;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    marging-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+}
