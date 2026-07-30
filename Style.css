@@ -93,11 +93,3 @@ body {
     padding: 20px;
     border-radius: 6px;
 }
-
-/* Extra */
-img {
-  max-width: 100%;
-  height: auto;         
-  border-radius: 8px;
-  margin: 20px 0;
-}
