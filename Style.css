@@ -4,11 +4,16 @@ header {
     padding: 20px 15px;
     border-radius: 20px;
     border: 1px solid #ff7a59;
+
     display: center-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
+    margin-top: 0;
     margin-bottom: 15px;
     padding-bottom: 3px solid #ff7a59;
     display: inline-block;
@@ -17,6 +22,7 @@ header h1 {
 header p {
     font-size: 1.1rem;
     color: #a0aec0;
+    margin: 0;
 }
 
 ul {
@@ -24,39 +30,49 @@ ul {
   padding: 0;
   margin: 20px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 ul li {
+    display: block;
+    width: 100%;
+}
+
+
+ul li a {
+    display: block;
     background-color: #1d3535;
     color: #e2e8f0;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     border: 1px solid #ff7a59;
-    display: inline-block;
+    text-align: center;
     transition: background-color 0.3s ease;
-}
+    }
+    
 
 ul li a:hover {
     background-color: #ff7a59;
-    color: #1d3535
+    color: #1d3535;
 }
 
 Main {
-    max-width: 800px;
+    width: 100%;
     margin: 40px auto;
     padding: 0 20px;
 }
 
+
 Section {
-    background-color: 1d3535;
+    background-color: #1d3535;
     color: #e2e8f0;
     padding: 30px;
     border-radius: 12px;
     border-left: 5px solid #ff7a59
+    margin-bottom: 24px;
 }
 
 section h2 {
@@ -65,29 +81,25 @@ section h2 {
 }
 
 body {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color: #0f1c1c;
- color: #e2e8f0;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f1c1c;
+  color: #e2e8f0;
 
- /* Box Model Elements */
-    margin: 40px auto;t
-    padding: 20px;
-    max-width: 800px;
+  overflow-x: hidden;
 }
 
 #introduction {
     background-color: #162a2a;
-    
-    /* Box Model Elements */
     border-left: 5px solid #ff7a59;
     padding: 15px 25px;
     margin-bottom: 30px;
 }
 
+
 .hobby-card {
     background-color: #1d3535;
-
-    /* Box Model Elements */
     border: 1px solid #ff7a59;
     margin: 20px 0px;
     padding: 20px;
@@ -95,9 +107,64 @@ body {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    marging-top: 1px solid #ddd;
-    color: #666;
-    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;   
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #a0aec0;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    ul li {
+        width: auto;
+    }
+
+    main, .layout-container {
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        align-items: start;
+        max-width: 100%
+    }
+
+
+    footer {
+        padding: 30px 20px;
+        margin-top: 60px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    header, main, footer {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;  
+    }
+
+    main, .layout-container {
+
+        grid-template-columns: 3fr 1fr;
+        gap: 45px
+    }
 }
