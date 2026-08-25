@@ -1,5 +1,5 @@
 
-const clickText = document.getElementById('greet-btn');
+const greetBtn = document.getElementById('greet-btn');
 const greetMessage = document.getElementById('greet-message');
 
 greetBtn.addEventListener('click', () => {
