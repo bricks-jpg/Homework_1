@@ -3,7 +3,7 @@ const greetBtn = document.getElementById('greet-btn');
 const greetMessage = document.getElementById('greet-message');
 
 greetBtn.addEventListener('click', () => {
-    greetMessage.textContent = "Thanks for clicking! Welcome to my web soace.";
+    greetMessage.textContent = "Thanks for clicking! Welcome to my web space.";
 });
 
 const userGoalInput = document.getElementById('user-goal-input');
