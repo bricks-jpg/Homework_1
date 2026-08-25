@@ -24,7 +24,7 @@ const hobbyList = document.getElementById('hobby-list');
 addHobbyBtn.addEventListener('click', () => {
     const hobbyText = hobbyInput.value.trim();
 
-    if (hobbyText.length > 0) {
+    if (hobbyText === '') {
         alert('please type a hobby before adding it to the list.');
         return;
     }
