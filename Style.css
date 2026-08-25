@@ -1,10 +1,9 @@
 header {
     background-color: #1d3535;
-    color: #e2e8f0;
+    color: #ffffff;
     padding: 20px 15px;
     border-radius: 20px;
     border: 1px solid #ff7a59;
-
     display: center-block;
     flex-direction: column;
     align-items: center;
@@ -15,13 +14,13 @@ header h1 {
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 15px;
-    padding-bottom: 3px solid #ff7a59;
+    border-bottom: 3px solid #ff7a59;
     display: inline-block;
 }
 
 header p {
     font-size: 1.1rem;
-    color: #a0aec0;
+    color: #f7fafc;
     margin: 0;
 }
 
@@ -44,7 +43,7 @@ ul li {
 ul li a {
     display: block;
     background-color: #1d3535;
-    color: #e2e8f0;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -68,10 +67,10 @@ Main {
 
 Section {
     background-color: #1d3535;
-    color: #e2e8f0;
+    color: #ffffff;
     padding: 30px;
     border-radius: 12px;
-    border-left: 5px solid #ff7a59
+    border-left: 5px solid #ff7a59;
     margin-bottom: 24px;
 }
 
@@ -86,7 +85,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0f1c1c;
   color: #e2e8f0;
-
   overflow-x: hidden;
 }
 
@@ -110,9 +108,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
-
-    margin-top: 40px;
+    padding: 30px 20px;
+    margin-top: 60px;
     border-top: 1px solid #e0e0e0;
     text-align: center;   
 }
@@ -120,10 +117,9 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
-    color: #a0aec0;
+    color: #ffffff;
     line-height: 1.5;
 }
-
 
 @media screen and (min-width: 768px) {
     ul {
@@ -135,26 +131,9 @@ footer p {
     ul li {
         width: auto;
     }
-
-    main, .layout-container {
-        display: grid;
-
-        grid-template-columns: 2fr 1fr;
-        gap: 30px;
-        align-items: start;
-        max-width: 100%
-    }
-
-
-    footer {
-        padding: 30px 20px;
-        margin-top: 60px;
-    }
 }
 
-
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
     header, main, footer {
       max-width: 1200px;
@@ -163,8 +142,78 @@ footer p {
     }
 
     main, .layout-container {
-
+        display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 45px
     }
+}
+
+
+#greet-btn, #add-hobby-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#greet-btn:hover, #add-hobby-btn:hover {
+    background-color: #0056b3;
+}
+
+#greet-message {
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 8px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.highlight-input {
+    background-color: #e2f0d9 !important;
+    border-color: #70ad47 !important;
+    box-shadow: 0 0 5px rgba(112, 173, 71, 0.5);
+}
+
+#hobby-list {
+    padding: 0;
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+#hobby-list li {
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
 }

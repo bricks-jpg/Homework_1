@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=deviice-width, initial-scale=1.0">
@@ -14,9 +14,8 @@
         <p>A simple project to practice writing and structured HTML.</p>
     </header>
 
-    <hr>
-
     <nav>
+        <hr>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#goals">My Learning Goals</a></li>
@@ -25,48 +24,62 @@
         </ul>
     </nav>
 
-    <hr>
+    <main class="layout-container">
 
+        <div class="primary-content">
+            <section id="introduction">
+                <h2>About Me</h2>
+                <hr>
+                <p>Hello! My name is Brianna Ricks, and I am excited to share my first web page with you. This project is a great opportunity for me to learn the basics of HTML and web development.</p>
 
-<main class="layout-container">
+                <button id="greet-btn">Click for a greeting!</button>
+                <p id="greet-message"></p>
+             </section>
 
-    <div class="primary-content">
-        <section id="introduction">
-            <h2>About Me</h2>
-            <hr>
-            <p>Hello! My name is Brianna Ricks, and I am excited to share my first web page with you. This project is a great opportunity for me to learn the basics of HTML and web development.</p>
+            <section id="goals">
+                <h2>Why I Am Learning Web Development</h2>
+                <p>Coding opens up many opportunities. Here are the three primary milestones I want to reach during this course:</p>
+                <ol>
+                    <li>Mastering document layouts using pure HTML tags.</li>
+                    <li>Creating clean, responsive designs with modern CSS techniques.</li>
+                    <li>Building dynamic web applications using simple scripting languages.</li>
+                </ol>
 
+                <div class="goal-input-box">
+                    <label for="user-goal-input">Type your personal learning goal:</label>
+                    <input type="text" id="user-goal-input" placeholder="e.g., Build a portfolio...">
+                </div>
+            </section>
+        </div>
 
-        <section id="goals">
-            <h2>Why I Am Learning Web Development</h2>
-            <p>Coding opens up many opportunities. Here are the three primary milestones I want to reach during this course:</p>
-            <ol>
-                <li>Mastering document layouts using pure HTML tags.</li>
-                <li>Creating clean, responsive designs with modern CSS techniques.</li>
-                <li>Building dynamic web applications using simple scripting languages.</li>
-            </ol>
-    </div>
+        <aside id="hobbies" class="sidebar-content">
+            <h2>Things I Enjoy</h2>
 
-    <aside id="hobbies" class="sidebar-content">
-        <h2>Things I Enjoy</h2>
+            <div class="hobby-controls">
+                <input type="text" id="hobby-input" placeholder="Add a hobby...">
+            </div>
 
-        <article>
-            <h3>Coding and Solving Problems</h3>
-            <p>Writing code is like solving an intricate puzzle. It is incredibly rewarding to see text files transform into functional webpages.</p>
-        </article>
+            <ul id="hobby-list"></ul>
+
+            <article>
+                <h3>Coding and Solving Problems</h3>
+                <p>Writing code is like solving an intricate puzzle. It is incredibly rewarding to see text files transform into functional webpages.</p>
+            </article>
         
-        <article>
-            <h3>Exploring New Technology</h3>
-            <p>I enjoy staying up to date with new tools, hardware configurations, and software frameworks that make development faster and more efficient.</p>
-        </article>
-    </aside>
+            <article>
+                <h3>Exploring New Technology</h3>
+                <p>I enjoy staying up to date with new tools, hardware configurations, and software frameworks that make development faster and more efficient.</p>
+            </article>
+        </aside>
 
-</main>
+    </main>
 
 
-</footer>
-     <p>&copy; 2026 Crafted by a student from Campuswire. Built with strict HTML validation rules.</p>
-<footer>
-        
+    </footer>
+         <p>&copy; 2026 Crafted by a student from Campuswire. Built with strict HTML validation rules.</p>
+    <footer>
+
+
+    <script src="script.js"></script>       
 </body>
 </html>
