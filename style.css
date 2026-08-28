@@ -149,7 +149,7 @@ footer p {
 }
 
 
-#greet-btn, #add-hobby-btn {
+#greet-btn, #add-hobby-btn, #add-goal-btn {
     background-color: #0b2240;
     color: white;
     border: none;
