@@ -76,7 +76,7 @@ Section {
 
 section h2 {
     margin-top: 0;
-    color: #ff7a59;
+    color: #ffffff;
 }
 
 body {
@@ -84,7 +84,7 @@ body {
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0f1c1c;
-  color: #e2e8f0;
+  color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -166,7 +166,7 @@ footer p {
 
 #greet-message {
     font-weight: bold;
-    color: #28a745;
+    color: #a3e635;
     margin-top: 8px;
 }
 
